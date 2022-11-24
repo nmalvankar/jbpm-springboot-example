@@ -3,7 +3,6 @@ package org.jbpm.cases.orderithwapp;
 import javax.sql.DataSource;
 import javax.transaction.TransactionManager;
 
-import org.apache.commons.dbcp2.PoolingDataSource;
 import org.apache.commons.dbcp2.managed.BasicManagedDataSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -61,10 +60,9 @@ public class DBConfiguration {
         ds.setUsername(username);
         ds.setPassword(password);
 
-        ds.setInitialSize(10);
-        ds.setMaxTotal(30);
+        //ds.setInitialSize(10);
+        ds.setMaxTotal(8);
         ds.setMaxWaitMillis(30000);
-        ds.setAbandonedUsageTracking(true);
        //  ds.setRemoveAbandonedOnBorrow(true);
        //  ds.setAbandonedUsageTracking(true);
         if (tm != null) {
