@@ -22,8 +22,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <java.version>1.8</java.version>
-    <narayana.version>5.9.0.Final</narayana.version>
-    <kie.version>7.52.0.Final-redhat-00008</kie.version>
+    <kie.version>7.67.0.Final-redhat-00017</kie.version>
   </properties>
 
 
@@ -42,6 +41,11 @@
       <artifactId>kie-server-controller-websocket-client</artifactId>
       <version>${kie.version}</version>
     </dependency>
+    <dependency>
+      <groupId>org.kie</groupId>
+      <artifactId>kie-spring</artifactId>
+      <version>7.67.0.Final-redhat-00017-RHPAM-4602</version>
+   </dependency>
 
     <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
     <dependency>
@@ -65,11 +69,11 @@
       <version>2.11.1</version>
     </dependency> -->
 
-    <dependency>
+    <!-- <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-dbcp2</artifactId>
       <version>2.9.0</version>
-    </dependency>
+    </dependency> -->
 
 
     <dependency>

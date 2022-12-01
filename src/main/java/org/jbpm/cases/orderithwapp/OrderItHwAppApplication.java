@@ -3,7 +3,6 @@ package org.jbpm.cases.orderithwapp;
 import java.util.HashSet;
 import java.util.Set;
 
-import org.jbpm.springboot.datasources.JBPMDataSourceAutoConfiguration;
 import org.kie.server.api.KieServerConstants;
 import org.kie.server.api.model.KieContainerResource;
 import org.kie.server.api.model.KieContainerStatus;
@@ -13,7 +12,7 @@ import org.kie.server.services.impl.storage.file.KieServerStateFileRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication (exclude = { JBPMDataSourceAutoConfiguration.class })
+@SpringBootApplication
 public class OrderItHwAppApplication {
     
     private static String GROUP_ID = "itorders";
